@@ -1,0 +1,6 @@
+bin/
+obj/
+wwwroot/images/*.webp
+wwwroot/images/*.jpg
+wwwroot/images/*.png
+.env

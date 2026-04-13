@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Embed – DSGVO-konform</title>
+  <link rel="stylesheet" href="/css/embed.css">
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+  
+  <!-- Instagram-Embed Container -->
+  <div id="instagram-embed"></div>
+
+  <!-- Konfiguration für Client-Skript -->
+  <script>
+    window.InstagramEmbed = {
+      consentMode: 'opt-in',
+      consentText: 'Um den neuesten Instagram-Beitrag anzuzeigen, werden Daten an Instagram (Meta Platforms, Inc., USA) übermittelt. Durch Klicken auf "Akzeptieren" stimmen Sie der Datenübermittlung zu.',
+      privacyPolicyUrl: '/datenschutz',
+    };
+  </script>
+  <script src="/js/embed.js"></script>
+
+</body>
+</html>
