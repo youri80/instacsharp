@@ -7,7 +7,7 @@ namespace InstagramEmbed;
 public class InstagramConfig
 {
     /// <summary>Instagram-Benutzername (ohne @)</summary>
-    public string InstagramUser { get; set; } = GetEnv("INSTA_USER", "beispiel_account");
+    public string InstagramUser { get; set; } = GetEnv("INSTA_USER", "spd_echzell");
 
     /// <summary>Port des Webservers</summary>
     public int Port { get; set; } = int.Parse(GetEnv("PORT", "3000"));

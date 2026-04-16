@@ -1,4 +1,6 @@
 using PuppeteerSharp;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
 
 namespace InstagramEmbed;
 
@@ -94,7 +96,7 @@ public class InstagramScraper
 
             await page.GoToAsync(url, new NavigationOptions
             {
-                WaitUntil = new[] { WaitUntilNavigation.NetworkIdle2 },
+                WaitUntil = new[] { WaitUntilNavigation.Networkidle2},
                 Timeout = _config.ScrapeTimeout,
             });
 
@@ -166,7 +168,7 @@ public class InstagramScraper
             // Bild über Browser herunterladen
             var response = await page.GoToAsync(imageUrl, new NavigationOptions
             {
-                WaitUntil = new[] { WaitUntilNavigation.NetworkIdle2 },
+                WaitUntil = new[] { WaitUntilNavigation.Networkidle2 },
                 Timeout = _config.ScrapeTimeout,
             });
 

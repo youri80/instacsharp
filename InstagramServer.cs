@@ -24,6 +24,12 @@ public class InstagramServer
         _scraper = new InstagramScraper(config);
         _cache = new MemoryCache(new MemoryCacheOptions());
     }
+    
+    public async Task Stop()
+    {
+        await _scraper.CloseBrowser();
+        Console.WriteLine("[Instagram-Embed] Server gestoppt");
+    }
 
     public async Task Start()
     {
